@@ -3,6 +3,7 @@ import './Nav.css'
 
 export default function Nav () {
   const [showMenu, setShowMenu] = useState(false)
+
   return (
     <nav>
       <a href='/' className='logo'>
@@ -26,7 +27,6 @@ export default function Nav () {
         <i
           className={showMenu ? 'fas fa-times' : 'fas fa-bars'}
           onClick={() => {
-            console.log('clicked')
             setShowMenu(!showMenu)
           }}
         ></i>

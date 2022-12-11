@@ -12,6 +12,7 @@ a {
 }
 .grid {
   display: grid;
+  grid-template-columns: repeat(12, 1fr);
 }
 .btn {
   padding: 0.5rem 1rem;
