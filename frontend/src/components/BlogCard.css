@@ -10,6 +10,7 @@
   grid-row: 1;
   grid-column: 1/13;
   text-align: center;
+  /* width: 100%; */
 }
 .card .blog-img {
   grid-row: 2;
@@ -24,7 +25,10 @@
 }
 .card .blog-date {
   grid-row: 3;
-  grid-column: 1/13;
+
   color: #666;
   padding-top: 0.5rem;
+}
+.card .categories {
+  grid-row: 4;
 }

@@ -23,12 +23,17 @@ export default function Home () {
       <div className='section grid'>
         <h3 className='category'>RECOMMENDED ARTICLES.</h3>
         <div className='blog-card-container'>
-          {/* <BlogCard />
-          <BlogCard /> */}
           {blogs &&
             blogs.map(blog => (
               <div key={blog._id}>
-                <BlogCard title={blog.title} img={blog.img} date={blog.date} />
+                <BlogCard
+                  title={blog.title}
+                  img={blog.img}
+                  date={blog.createdAt}
+                  category={blog.category}
+                  id={blog._id}
+                  content={blog.content}
+                />
               </div>
             ))}
         </div>
