@@ -1,0 +1,17 @@
+.create-blog form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20vw;
+}
+.create-blog form label {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.create-blog form label input {
+  width: 100%;
+}

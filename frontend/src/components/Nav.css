@@ -35,10 +35,11 @@ nav .links ul {
 }
 nav .links ul .active a {
   color: rgba(0, 0, 0, 0.6);
+  right: 100%;
 }
 nav .links a {
   font-weight: 600;
-  transition: 0.1s ease-in-out;
+  /* transition: 0.1s ease-in-out; */
 }
 nav .links a:hover {
   color: rgba(0, 0, 0, 0.6);
@@ -50,7 +51,7 @@ nav .links a:hover {
 
 @media screen and (max-width: 759px) {
   nav .links {
-    animation: slideLeft 100ms;
+    /* animation: slideLeft 100ms; */
   }
 
   @keyframes slideRight {

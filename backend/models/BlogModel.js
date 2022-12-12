@@ -13,6 +13,10 @@ const BlogModelSchema = new mongoose.Schema(
     content: {
       type: Array,
       required: true
+    },
+    img: {
+      type: String,
+      required: true
     }
   },
   { timestamps: true }

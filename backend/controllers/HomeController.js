@@ -23,7 +23,7 @@ const getBlogsByCategory = async (req, res) => {
 }
 
 const createBlog = async (req, res) => {
-  const { title, category, content } = req.body
+  const { title, category, content, img } = req.body
 
   // catch errors
   let emptyFields = []
@@ -43,7 +43,7 @@ const createBlog = async (req, res) => {
   }
 
   try {
-    const blog = await Blog.create({ title, category, content })
+    const blog = await Blog.create({ title, category, content, img })
     res.status(200).json(blog)
   } catch (err) {
     res.status(400).json({ error: err.message })

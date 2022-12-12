@@ -1,4 +1,6 @@
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
+import * as FaIcons from 'react-icons/fa'
 import './Nav.css'
 
 export default function Nav () {
@@ -6,30 +8,39 @@ export default function Nav () {
 
   return (
     <nav>
-      <a href='/' className='logo'>
+      <Link to='/' className='logo'>
         Creed Thoughts
-      </a>
+      </Link>
       <div className={showMenu ? 'links' : 'links hidden'}>
         <ul>
           <li className='active'>
-            <a href='/'>Home</a>
+            <Link to='/'>Home</Link>
           </li>
           <li>
-            <a href='/'>About</a>
+            <Link to='/'>About</Link>
           </li>
           <li>
-            <a href='/'>Contact</a>
+            <Link to='/'>Contact</Link>
           </li>
         </ul>
       </div>
+      <Link to='/new-blog'>
+        <button className={showMenu ? 'btn hidden' : 'btn'}>New</button>
+      </Link>
       <button className={showMenu ? 'btn hidden' : 'btn'}>Login</button>
       <div id='nav-mobile'>
-        <i
+        {/* <i
           className={showMenu ? 'fas fa-times' : 'fas fa-bars'}
           onClick={() => {
             setShowMenu(!showMenu)
           }}
-        ></i>
+        ></i> */}
+        <FaIcons.FaBars
+          className={showMenu ? 'fas fa-times' : 'fas fa-bars'}
+          onClick={() => {
+            setShowMenu(!showMenu)
+          }}
+        />
       </div>
     </nav>
   )
