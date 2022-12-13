@@ -1,0 +1,27 @@
+.footer {
+  border-top: 1px solid #e6e6e6;
+  text-align: center;
+  padding: 2rem 0;
+  /* border: 1px solid red; */
+  background-color: #e6e6e6;
+}
+.footer .logo {
+  font-size: 1.25rem;
+}
+.footer .socials {
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem 0;
+}
+.footer .links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.footer .links .link {
+  color: #555;
+}

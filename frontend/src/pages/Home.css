@@ -23,6 +23,8 @@
   grid-column: 1/13;
   font-size: 1rem;
 }
+.hero .section .featured {
+}
 
 .hero .section .blog-card-container {
   grid-row: 2;

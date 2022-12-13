@@ -3,6 +3,8 @@ const Blog = require('../models/BlogModel')
 
 const getBlogs = async (req, res) => {
   const blogs = await Blog.find({}).sort({ createdAt: -1 })
+  // const blogs = await Blog.find({}).sort()
+
   res.status(200).json(blogs)
 }
 const getBlog = async (req, res) => {

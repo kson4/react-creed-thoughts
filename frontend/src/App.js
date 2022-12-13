@@ -4,6 +4,7 @@ import Nav from './components/Nav'
 import CreateBlog from './pages/CreateBlog'
 import Home from './pages/Home'
 import Blog from './components/Blog'
+import Footer from './components/Footer'
 
 function App () {
   return (
@@ -23,6 +24,7 @@ function App () {
             </Route>
           </Switch>
         </div>
+        <Footer />
       </div>
     </Router>
   )

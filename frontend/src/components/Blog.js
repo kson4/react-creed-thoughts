@@ -4,16 +4,14 @@ import './Blog.css'
 
 export default function Blog () {
   const location = useLocation()
-  console.log(location)
   const { title, img, date, content } = location.state
-  // const { img } = location.state
 
   return (
     <div className='blog'>
       <h2 className='blog-title'>{title}</h2>
 
       <div className='blog-img'>
-        <img src={img} alt='blog image' />
+        <img src={img} alt='main section' />
       </div>
       <div className='blog-info'>
         <p className='blog-date'>{date}</p>
@@ -21,7 +19,7 @@ export default function Blog () {
       </div>
       <div className='blog-content'>
         {content.map(item => (
-          <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{item}</p>
+          <p key={item}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{item}</p>
         ))}
       </div>
     </div>
