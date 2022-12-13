@@ -5,6 +5,8 @@ import CreateBlog from './pages/CreateBlog'
 import Home from './pages/Home'
 import Blog from './components/Blog'
 import Footer from './components/Footer'
+import About from './pages/About'
+import Contact from './pages/Contact'
 
 function App () {
   return (
@@ -21,6 +23,12 @@ function App () {
             </Route>
             <Route path='/blog/:id'>
               <Blog />
+            </Route>
+            <Route path='/about'>
+              <About />
+            </Route>
+            <Route path='/contact'>
+              <Contact />
             </Route>
           </Switch>
         </div>

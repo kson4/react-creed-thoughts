@@ -63,18 +63,34 @@ export default function Home () {
             blogs
               .slice(0)
               .reverse()
-              .map(blog => (
-                <div key={blog._id}>
-                  <BlogCard
-                    title={blog.title}
-                    img={blog.img}
-                    date={blog.createdAt}
-                    category={blog.category}
-                    id={blog._id}
-                    content={blog.content}
-                  />
-                </div>
-              ))}
+              .map((blog, idx) => {
+                if (idx === 1) {
+                  return (
+                    <div key={blog._id}>
+                      <BlogCard
+                        title={blog.title}
+                        img={blog.img}
+                        date={blog.createdAt}
+                        category={blog.category}
+                        id={blog._id}
+                        content={blog.content}
+                      />
+                    </div>
+                  )
+                }
+                return (
+                  <div key={blog._id}>
+                    <BlogCard
+                      title={blog.title}
+                      img={blog.img}
+                      date={blog.createdAt}
+                      category={blog.category}
+                      id={blog._id}
+                      content={blog.content}
+                    />
+                  </div>
+                )
+              })}
         </div>
       </div>
     </div>

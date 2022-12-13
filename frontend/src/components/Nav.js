@@ -5,7 +5,9 @@ import './Nav.css'
 
 export default function Nav () {
   const [showMenu, setShowMenu] = useState(false)
-
+  const handleShowMenu = () => {
+    setShowMenu(!showMenu)
+  }
   return (
     <nav>
       <Link to='/' className='logo'>
@@ -14,13 +16,19 @@ export default function Nav () {
       <div className={showMenu ? 'links' : 'links hidden'}>
         <ul>
           <li className='active'>
-            <Link to='/'>Home</Link>
+            <Link to='/' onClick={handleShowMenu}>
+              Home
+            </Link>
           </li>
           <li>
-            <Link to='/'>About</Link>
+            <Link to='/' onClick={handleShowMenu}>
+              About
+            </Link>
           </li>
           <li>
-            <Link to='/'>Contact</Link>
+            <Link to='/contact' onClick={handleShowMenu}>
+              Contact
+            </Link>
           </li>
         </ul>
       </div>
@@ -29,18 +37,8 @@ export default function Nav () {
       </Link>
       <button className={showMenu ? 'btn hidden' : 'btn'}>Login</button>
       <div id='nav-mobile'>
-        {/* <i
-          className={showMenu ? 'fas fa-times' : 'fas fa-bars'}
-          onClick={() => {
-            setShowMenu(!showMenu)
-          }}
-        ></i> */}
-        <FaIcons.FaBars
-          className={showMenu ? 'fas fa-times' : 'fas fa-bars'}
-          onClick={() => {
-            setShowMenu(!showMenu)
-          }}
-        />
+        {!showMenu && <FaIcons.FaBars onClick={handleShowMenu} />}
+        {showMenu && <i className='fas fa-times' onClick={handleShowMenu}></i>}
       </div>
     </nav>
   )

@@ -27,10 +27,11 @@ nav .links ul {
   gap: 8rem;
   height: 100vh;
   top: 0vh;
-  left: 60vw;
-  width: 40vw;
+  left: 50vw;
+  width: 50vw;
   background-color: #e6e6e6;
-  z-index: -1;
+  opacity: 0.8;
+  z-index: 1;
   padding-left: 1rem;
 }
 nav .links ul .active a {
@@ -47,6 +48,10 @@ nav .links a:hover {
 
 #nav-mobile i {
   margin: auto;
+}
+#nav-mobile {
+  position: relative;
+  z-index: 2;
 }
 
 @media screen and (max-width: 759px) {
