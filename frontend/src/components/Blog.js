@@ -22,6 +22,29 @@ export default function Blog () {
           <p key={item}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{item}</p>
         ))}
       </div>
+      <div className='blog-comments'>
+        <div className='info'>
+          <div className='comment'>
+            <i class='fa-regular fa-comment'></i>
+            <p>10 Comments</p>
+          </div>
+          <div className='thumbs'>
+            <i class='fa-regular fa-thumbs-up'></i>
+            <i class='fa-regular fa-thumbs-down'></i>
+            {/* <i class='fa-solid fa-thumbs-down'></i> */}
+          </div>
+        </div>
+        <form className='textarea'>
+          <textarea
+            name=''
+            id=''
+            cols='30'
+            rows='10'
+            placeholder='What are your thoughts?'
+          ></textarea>
+          <button className='btn'>Comment</button>
+        </form>
+      </div>
     </div>
   )
 }

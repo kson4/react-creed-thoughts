@@ -30,3 +30,41 @@
   font-size: 1.5rem;
   line-height: 2rem;
 }
+
+.blog .blog-comments {
+  border-top: 2px solid #000;
+  margin: 0 1.5rem;
+  padding-top: 2rem;
+  margin-bottom: 1rem;
+}
+.blog .blog-comments .info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  padding: 0 1rem;
+}
+.blog .blog-comments .info .comment {
+  display: flex;
+  gap: 0.5rem;
+}
+.blog .blog-comments .info .thumbs {
+  display: flex;
+  gap: 1rem;
+}
+
+.blog .blog-comments .textarea {
+  width: 100%;
+  border: 1px solid #e6e6e6;
+}
+.blog .blog-comments .textarea textarea {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.25rem;
+}
+.blog .blog-comments .textarea .btn {
+  width: 100%;
+  background-color: #e6e6e6;
+}
