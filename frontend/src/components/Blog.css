@@ -58,6 +58,7 @@
 .blog .blog-comments .textarea {
   width: 100%;
   border: 1px solid #e6e6e6;
+  margin-bottom: 2rem;
 }
 .blog .blog-comments .textarea textarea {
   width: 100%;
@@ -67,4 +68,8 @@
 .blog .blog-comments .textarea .btn {
   width: 100%;
   background-color: #e6e6e6;
+}
+
+.blog .blog-comments .comments .comments-author {
+  margin-bottom: 0.5rem;
 }

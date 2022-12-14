@@ -44,6 +44,13 @@ export default function Blog () {
           ></textarea>
           <button className='btn'>Comment</button>
         </form>
+        <div className='comments'>
+          <div className='comments-author'>NAME: DATE</div>
+          <div className='comments-content'>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod,
+            ducimus.
+          </div>
+        </div>
       </div>
     </div>
   )
