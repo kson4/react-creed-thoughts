@@ -17,13 +17,13 @@ export default function Footer () {
       </div>
       <div className='links'>
         <Link to='/'>
-          <p className='link'>Home</p>
+          <p className='link'>HOME</p>
         </Link>
-        <Link to='/'>
-          <p className='link'>About</p>
+        <Link to='/about'>
+          <p className='link'>ABOUT</p>
         </Link>
-        <Link to='/'>
-          <p className='link'>Contact</p>
+        <Link to='/contact'>
+          <p className='link'>CONTACT</p>
         </Link>
       </div>
     </div>

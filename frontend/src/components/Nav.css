@@ -40,7 +40,6 @@ nav .links ul .active a {
 }
 nav .links a {
   font-weight: 600;
-  /* transition: 0.1s ease-in-out; */
 }
 nav .links a:hover {
   color: rgba(0, 0, 0, 0.6);
@@ -52,6 +51,9 @@ nav .links a:hover {
 #nav-mobile {
   position: relative;
   z-index: 2;
+}
+#nav-mobile .fa-times {
+  font-size: 1.5rem;
 }
 
 @media screen and (max-width: 759px) {

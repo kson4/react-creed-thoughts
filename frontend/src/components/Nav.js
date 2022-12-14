@@ -21,7 +21,7 @@ export default function Nav () {
             </Link>
           </li>
           <li>
-            <Link to='/' onClick={handleShowMenu}>
+            <Link to='/about' onClick={handleShowMenu}>
               About
             </Link>
           </li>

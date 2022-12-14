@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react'
+import Ad from '../components/Ad'
 import BlogCard from '../components/BlogCard'
+import Subscribe from '../components/Subscribe'
 import './Home.css'
 
 export default function Home () {
@@ -66,15 +68,35 @@ export default function Home () {
               .map((blog, idx) => {
                 if (idx === 1) {
                   return (
-                    <div key={blog._id}>
-                      <BlogCard
-                        title={blog.title}
-                        img={blog.img}
-                        date={blog.createdAt}
-                        category={blog.category}
-                        id={blog._id}
-                        content={blog.content}
-                      />
+                    <div>
+                      <Subscribe />
+                      <div key={blog._id}>
+                        <BlogCard
+                          title={blog.title}
+                          img={blog.img}
+                          date={blog.createdAt}
+                          category={blog.category}
+                          id={blog._id}
+                          content={blog.content}
+                        />
+                      </div>
+                    </div>
+                  )
+                }
+                if (idx === 3) {
+                  return (
+                    <div>
+                      <Ad />
+                      <div key={blog._id}>
+                        <BlogCard
+                          title={blog.title}
+                          img={blog.img}
+                          date={blog.createdAt}
+                          category={blog.category}
+                          id={blog._id}
+                          content={blog.content}
+                        />
+                      </div>
                     </div>
                   )
                 }
